@@ -1,0 +1,22 @@
+[GRAMMAR]
+ELEMENTS:
+- TAG: TEXT
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: SOURCE_ELEMENTS
+    TYPE: String
+    REQUIRED: True
+  - TITLE: ENGINE
+    TYPE: String
+    REQUIRED: True
+  - TITLE: FINGERPRINT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+

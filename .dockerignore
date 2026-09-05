@@ -1,0 +1,11 @@
+.git
+.venv
+**/__pycache__
+**/.pytest_cache
+**/node_modules
+frontend/dist
+e2e/playwright-report
+e2e/test-results
+data
+*.pyc
+.DS_Store

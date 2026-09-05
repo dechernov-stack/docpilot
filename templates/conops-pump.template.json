@@ -1,0 +1,58 @@
+{
+  "code": "conops-pump",
+  "title": "ConOps насосной станции",
+  "style": {
+    "tone": "Деловая инженерная проза без маркетинга",
+    "traceability": "Каждое утверждение завершается ссылкой [MID]",
+    "numbers": "Каждое число должно присутствовать в данных указанных элементов"
+  },
+  "sections": {
+    "§1": {
+      "title": "Назначение и контекст",
+      "expects": {
+        "MCR": [
+          {"kind": "statement", "min": 1, "label": "тезис"},
+          {"kind": "entity_ref", "entity_kind": "stakeholder", "min": 2, "label": "стейкхолдера"}
+        ],
+        "SRR": [
+          {"kind": "statement", "min": 1, "label": "тезис"},
+          {"kind": "entity_ref", "entity_kind": "stakeholder", "min": 2, "label": "стейкхолдера"}
+        ]
+      }
+    },
+    "§2": {
+      "title": "Режимы и состояния",
+      "expects": {
+        "MCR": [{"kind": "entity_ref", "entity_kind": "mode", "min": 3, "label": "режима"}],
+        "SRR": [{"kind": "entity_ref", "entity_kind": "mode", "min": 3, "label": "режима"}]
+      }
+    },
+    "§3": {
+      "title": "Операционные сценарии",
+      "expects": {
+        "MCR": [
+          {"kind": "entity_ref", "entity_kind": "scenario", "min": 1, "label": "сценарий"},
+          {"kind": "statement", "min": 1, "label": "тезис"}
+        ],
+        "SRR": [
+          {"kind": "entity_ref", "entity_kind": "scenario", "min": 3, "label": "сценария"},
+          {"kind": "statement", "min": 1, "label": "тезис"}
+        ]
+      }
+    },
+    "§4": {
+      "title": "Среда и ограничения",
+      "expects": {
+        "MCR": [
+          {"kind": "fact_ref", "min": 2, "label": "факта"},
+          {"kind": "query", "min": 1, "label": "запрос"}
+        ],
+        "SRR": [
+          {"kind": "fact_ref", "min": 2, "label": "факта"},
+          {"kind": "query", "min": 1, "label": "запрос"}
+        ]
+      }
+    }
+  }
+}
+

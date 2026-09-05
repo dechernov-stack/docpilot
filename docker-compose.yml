@@ -1,0 +1,29 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    environment:
+      DOCPILOT_DB: /app/backend/data/docpilot.db
+      DOCPILOT_DOCS_ROOT: /app/backend/data/repos
+      DOCPILOT_NATIVE_PRINT: "1"
+    volumes:
+      - docpilot-data:/app/backend/data
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/api/health')"]
+      interval: 5s
+      timeout: 3s
+      retries: 12
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:${DOCPILOT_PORT:-8080}:80"
+
+volumes:
+  docpilot-data:

@@ -1,0 +1,140 @@
+[GRAMMAR]
+ELEMENTS:
+- TAG: FACT_REF
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: REF
+    TYPE: String
+    REQUIRED: True
+  - TITLE: REF_VERSION
+    TYPE: String
+    REQUIRED: True
+  - TITLE: DISPOSITION
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AUTHOR
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+- TAG: ENTITY_REF
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: REF
+    TYPE: String
+    REQUIRED: True
+  - TITLE: KIND
+    TYPE: String
+    REQUIRED: True
+  - TITLE: REF_VERSION
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AUTHOR
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+- TAG: STATEMENT
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: SUPPORTS
+    TYPE: String
+    REQUIRED: False
+  - TITLE: AUTHOR
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+- TAG: QUERY
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: KIND
+    TYPE: String
+    REQUIRED: True
+  - TITLE: FILTER
+    TYPE: String
+    REQUIRED: True
+  - TITLE: COLUMNS
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AUTHOR
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+- TAG: FIGURE
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: REF
+    TYPE: String
+    REQUIRED: True
+  - TITLE: CAPTION
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AUTHOR
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
+- TAG: TABLE
+  PROPERTIES:
+    VIEW_STYLE: Narrative
+  FIELDS:
+  - TITLE: MID
+    TYPE: String
+    REQUIRED: True
+  - TITLE: QUERY
+    TYPE: String
+    REQUIRED: True
+  - TITLE: COLUMNS
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AUTHOR
+    TYPE: String
+    REQUIRED: True
+  - TITLE: AT
+    TYPE: String
+    REQUIRED: True
+  - TITLE: STATEMENT
+    TYPE: String
+    REQUIRED: True
